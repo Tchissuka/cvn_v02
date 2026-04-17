@@ -1,0 +1,11 @@
+<?php
+// Redirecionar para o dashboard se logado, ou para o login
+session_start();
+
+if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+    header('Location: dashboard.php');
+} else {
+    header('Location: login.php');
+}
+exit;
+?>

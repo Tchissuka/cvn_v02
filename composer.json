@@ -1,0 +1,47 @@
+{
+    "name": "cvnsu/theme",
+    "type": "project",
+    "description": "Sistema de gestão inteligente para a Clínica Videira Nguepe, oferecendo controle completo de pacientes, agendamentos, prontuários eletrônicos, faturamento e relatórios clínicos.",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Pedro J. Mariano",
+            "email": "suporte@cvnsu.co.ao",
+            "homepage": "https://cvnsu.co.ao",
+            "role": "SaaS"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Boot/Config.php",
+            "source/Boot/Helpers.php",
+            "source/Boot/Minify.php"
+        ]
+    },
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "chillerlan/php-qrcode": "^4.4",
+        "phpmailer/phpmailer": "^6.0",
+        "league/plates": "^3.0",
+        "matthiasmullie/minify": "^1.0",
+        "coffeecode/uploader": "^2.0",
+        "coffeecode/cropper": "^2.0",
+        "intervention/image": "^2.0",
+        "coffeecode/optimizer": "^2.0",
+        "coffeecode/paginator": "^2.0",
+        "coffeecode/router": "^2.0",
+        "datatables/datatables": "^1.0",
+        "picqer/php-barcode-generator": "^2.4",
+        "dompdf/dompdf": "^2.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    }
+}

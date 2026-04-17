@@ -1,0 +1,25 @@
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+x509_extensions = v3_req
+distinguished_name = dn
+
+[dn]
+C = AO
+ST = Luanda
+L = Luanda
+O = CVN
+OU = Local Dev
+CN = cvn.local
+
+[v3_req]
+subjectAltName = @alt_names
+basicConstraints = critical,CA:TRUE
+keyUsage = critical,digitalSignature,keyEncipherment,keyCertSign
+extendedKeyUsage = serverAuth
+
+[alt_names]
+DNS.1 = cvn.local
+DNS.2 = www.cvn.local
+IP.1 = 127.0.0.1

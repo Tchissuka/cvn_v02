@@ -1,0 +1,14 @@
+/.env
+/vendor/
+/storage/cache/
+/storage/logs/
+/node_modules/
+/.idea/
+/.vscode/
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+*.bak
+*.swp
+test_output.txt
